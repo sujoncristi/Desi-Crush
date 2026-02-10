@@ -1,0 +1,7 @@
+{
+  "name": "Desi Feast",
+  "description": "A vibrant, food-themed match-3 puzzle game featuring iconic Bangladeshi dishes. Designed for all ages with automatic hints and boosters.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}

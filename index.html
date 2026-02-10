@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Desi Feast: Royal Kitchen</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700;900&family=Hind+Siliguri:wght@400;700&family=Paytone+One&display=swap" rel="stylesheet">
+    <style>
+        :root { --bg: #fffcf5; }
+        body {
+            font-family: 'Outfit', 'Hind Siliguri', sans-serif;
+            margin: 0;
+            background: var(--bg);
+            touch-action: manipulation;
+            overflow: hidden;
+        }
+        .font-bubbly { font-family: 'Paytone One', sans-serif; }
+        .bg-royal {
+            background: radial-gradient(circle at center, #fff5e6 0%, #ffdfba 100%);
+        }
+        /* Prevents pull-to-refresh on mobile */
+        html, body { height: 100%; position: fixed; width: 100%; }
+        #root { height: 100%; }
+    </style>
+    <script>
+      window.process = { env: { API_KEY: "" } };
+    </script>
+    <script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@19.0.0",
+    "react-dom": "https://esm.sh/react-dom@19.0.0",
+    "react-dom/client": "https://esm.sh/react-dom@19.0.0/client",
+    "framer-motion": "https://esm.sh/framer-motion@11.11.17?external=react,react-dom",
+    "@google/genai": "https://esm.sh/@google/genai@1.37.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
+    "react/": "https://esm.sh/react@^19.2.4/"
+  }
+}
+</script>
+</head>
+<body class="bg-royal">
+    <div id="root"></div>
+    <script type="module" src="./index.tsx"></script>
+</body>
+</html>
